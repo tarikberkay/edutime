@@ -59,6 +59,18 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
+
+LOGIN_REDIRECT_URL = '/'
+
+# LOGIN_URL = '/login/'
+
+
+
 ROOT_URLCONF = 'edutime.urls'
 
 TEMPLATES = [

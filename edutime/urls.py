@@ -29,6 +29,10 @@ urlpatterns = [
     path('login/', home_views.login, name='login'),
     path('', include('user.urls')),
     path('news/', home_views.news, name='news'),
+    path('skorboard/', home_views.skorboard, name='skorboard'),
+
     path('staff/', home_views.staff, name='staff'),
-    
+    path("ask_question/", home_views.ask_question, name="ask_question"),
+
 ]
+    
